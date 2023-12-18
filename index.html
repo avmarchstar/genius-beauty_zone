@@ -18,7 +18,7 @@
           <nav class="header__menu">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#aboutus" class="header__link link" title="Про нас"
+                <a href="#about" class="header__link link" title="Про нас"
                   >Про нас</a
                 >
               </li>
@@ -76,8 +76,7 @@
           <div class="hero-section__content">
             <p>Косметологічна клініка</p>
             <h1
-              class="hero-section__title title"
-              class="hero-sectioin__title title"
+              class="hero-section__title title text-capitalized text-pri-blue-colored"
             >
               beauty<br />
               zone
@@ -90,57 +89,96 @@
               Замовити дзвінок
             </button>
             <p>
-              Запишись та отримай безкоштовну консультацію нашого косметолога
+              Запишись та отримай безкоштовну <br />
+              консультацію нашого косметолога
             </p>
           </div>
         </div>
       </section>
-      <section id="aboutus" class="section about-section">
+      <section id="about" class="section about-section">
         <div class="container">
-          <div class="about-section__content">
-            <h2 class="about-section__title">
-              <span>Перевтілюйтесь в </span>beauty zone!
-            </h2>
-            <div class="about-section__text">
-              <p>
-                Наша косметологічна клініка пропонує вам професійні послуги з
-                догляду за шкірою обличчя та тіла.
+          <div class="about-section__container">
+            <div class="about-section__content">
+              <h2 class="about-section__title title">
+                Перевтілюйтесь <br />в
+                <span class="text-capitalized text-pri-blue-colored"
+                  >beauty zone!</span
+                >
+              </h2>
+              <p class="about-section__text">
+                Наша косметологічна клініка пропонує вам професійні послуги
+                <br />
+                з догляду за шкірою обличчя та тіла.
               </p>
-              <p>
-                B beauty zone ми гарантуємо найвищі стандарти якості та приємний
-                сервіс. Наші косметологічні процедури та препарати допоможуть
-                вам підтримувати свою красу та молодість. З нами краса назавжди!
+              <p class="about-section__text">
+                B
+                <span class="text-capitalized text-semi-bold">beauty zone</span>
+                ми гарантуємо найвищі стандарти якості<br />
+                та приємний сервіс. Наші косметологічні процедуриbr та
+                препарати<br />
+                допоможуть вам підтримувати свою красу та молодість. <br />
+                З нами краса назавжди!
               </p>
             </div>
-          </div>
-          <div class="about-section__images">
-            <!-- Images -->
+            <div class="about-section__images-content">
+              <img
+                class="about-section__img"
+                srcset="
+                  ./images/about-us-face-before.jpg    1x,
+                  ./images/about-us-face-before@2x.jpg 2x
+                "
+                src="./images/about-us-face-before.jpg"
+                alt="woman's face before procedure"
+              />
+              <img
+                class="about-section__img about-section__img--right"
+                srcset="
+                  ./images/about-us-face-after.jpg    1x,
+                  ./images/about-us-face-after@2x.jpg 2x
+                "
+                src="./images/about-us-face-after.jpg"
+                alt="woman's face after procedure"
+              />
+            </div>
           </div>
         </div>
       </section>
       <section id="why" class="section why-section">
         <div class="container">
-          <h2 class="title">Чому люди обирають нас</h2>
-          <div class="why-section__content">
-            <article class="why-section__article">
-              <!-- icon -->
-              <p>
-                Всі наші косметологи мають вищу медичну освіту та стаж роботи
-                від 5 років
-              </p>
-            </article>
-            <article class="why-section__article">
-              <p>
-                Використовуємо тільки професійне обладнання та косметику,
-                перевірену часом
-              </p>
-            </article>
-            <article class="why-section__article">
-              <p>
-                Наша мета - підкреслити переваги та приховати недоліки, а не
-                переробити
-              </p>
-            </article>
+          <div class="why-section__container">
+            <h2 class="why-section__title title">
+              Чому люди<br />
+              <span class="text-pri-blue-colored">обирають нас</span>
+            </h2>
+            <div class="why-section__content">
+              <article class="why-card">
+                <svg class="why-card__icon icon-science">
+                  <use href="./images/symbol-defs.svg#icon-science"></use>
+                </svg>
+                <p class="text-centered">
+                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                  від 5 років
+                </p>
+              </article>
+              <article class="why-card">
+                <svg class="why-card__icon icon-medicine">
+                  <use href="./images/symbol-defs.svg#icon-medicine"></use>
+                </svg>
+                <p class="text-centered">
+                  Використовуємо тільки професійне обладнання та косметику,
+                  перевірену часом
+                </p>
+              </article>
+              <article class="why-card">
+                <svg class="why-card__icon icon-crown">
+                  <use href="./images/symbol-defs.svg#icon-crown"></use>
+                </svg>
+                <p class="text-centered">
+                  Наша мета - підкреслити переваги та приховати недоліки, а не
+                  переробити
+                </p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
