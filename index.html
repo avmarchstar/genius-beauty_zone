@@ -184,18 +184,59 @@
       </section>
       <section id="procedures" class="section procedures-section">
         <div class="container">
-          <h2 class="title"><span>Наші</span> процедури</h2>
+          <h2 class="title procedures-section__title">
+            Наші <span class="text-pri-blue-colored">процедури</span>
+          </h2>
           <!-- carousel -->
           <div class="carousel">
-            <article class="procedures-section__article">
-              <p>Маски для обличчя</p>
-            </article>
-            <article class="procedures-section__article">
-              <p>Ін'єкції для обличчя</p>
-            </article>
-            <article class="procedures-section__article">
-              <p>Очищення обличчя</p>
-            </article>
+            <button class="carousel__button prev">
+              <svg width="17px" height="17px">
+                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="procedures-section__cards">
+              <article class="procedures-card">
+                <img
+                  class="procedures-card__img"
+                  srcset="
+                    ./images/procedures-mask.jpg    1x,
+                    ./images/procedures-mask@2x.jpg 2x
+                  "
+                  src="./images/procedures-mask.jpg"
+                  alt="Дівчині роблять маску для обличчя"
+                />
+                <p class="text-centered">Маски для обличчя</p>
+              </article>
+              <article class="procedures-card">
+                <img
+                  class="procedures-card__img"
+                  srcset="
+                    ./images/procedures-injection.jpg 1x,
+                    ./images/procedures-injection.jpg 2x
+                  "
+                  src="./images/procedures-injection.jpg"
+                  alt="Дівчині роблять ін'єкцію для обличчя"
+                />
+                <p class="text-centered">Ін'єкції для обличчя</p>
+              </article>
+              <article class="procedures-card">
+                <img
+                  class="procedures-card__img"
+                  srcset="
+                    ./images/procedures-cleaning.jpg        1x,
+                    ./images/procedures-cleaning.jpg@2x.jpg 2x
+                  "
+                  src="./images/procedures-cleaning.jpg"
+                  alt="Дівчині роблять чистку обличчя"
+                />
+                <p class="text-centered">Очищення обличчя</p>
+              </article>
+            </div>
+            <button class="carousel__button next">
+              <svg width="17px" height="17px">
+                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
