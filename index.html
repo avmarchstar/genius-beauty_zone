@@ -83,9 +83,8 @@
             </h1>
             <button
               id="showDialogBtn"
-              class="hero-section__button button"
+              class="hero-section__button button js-btn-showmodal"
               type="button"
-              class="hero-section__button button"
             >
               Замовити дзвінок
             </button>
@@ -111,7 +110,7 @@
                 <br />
                 з догляду за шкірою обличчя та тіла.
               </p>
-              <p class="about-section__text">
+              <p class="about-section__text" >
                 B
                 <span class="text-capitalized text-semi-bold">beauty zone</span>
                 ми гарантуємо найвищі стандарти якості<br />
@@ -255,8 +254,43 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
-              <div class="contacts-section__text">
+              <div class="contacts-section__form">
                 <!-- FORM -->
+                <form class="form">
+                  <p class="form__text text-centered">
+                    Запишіться
+                    <span class="text-pri-blue-colored">безкоштовно</span><br />
+                    та отримайте подарунок
+                  </p>
+                  <div class="form__controls">
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Ваше ім'я та прізвище"
+                    />
+                    <input
+                      type="tel"
+                      class="input"
+                      placeholder="Ваш номер телефону"
+                    />
+                    <input
+                      type="email"
+                      class="input"
+                      placeholder="Ваша електронна пошта"
+                    />
+                    <div class="form__button-section">
+                      <button class="button" type="submit">
+                        Записатись безкоштовно
+                      </button>
+                      <p class="form__confirm-text text-centered">
+                        Натискаючи на кнопку я погоджуюсь<br />
+                        <span class="text-underlined"
+                          >з політикою конфіденційності</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -350,19 +384,25 @@
       </div>
     </footer>
     <!-- Modal -->
-    <div class="modal">
+    <div class="modal hidden">
       <div class="modal__backdrop">
         <div class="modal__window">
-          <button class="button-close">X</button>
+          <button class="button-close js-btn-close">
+            <svg width="16px" height="16px">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
           <div class="modal__title title">
             Замовити<br />
             дзвінок
           </div>
-          <div class="modal__content">
-            <p class="modal__text text-centered">
-              Запишіться <span class="text-pri-blue-colored">безкоштовно</span><br> та отримайте подарунок
+          <form class="form">
+            <p class="form__text text-centered">
+              Запишіться <span class="text-pri-blue-colored">безкоштовно</span
+              ><br />
+              та отримайте подарунок
             </p>
-            <form class="form" action="#">
+            <div class="form__controls">
               <input
                 type="text"
                 class="input"
@@ -378,15 +418,19 @@
                 class="input"
                 placeholder="Ваша електронна пошта"
               />
-              <div>
-                <button class="button">Записатись безкоштовно</button>
-                <p class="confirm-text text-centered">
-                  Натискаючи на кнопку я погоджуюсь
-                  <span>з політикою конфіденційності</span>
+              <div class="form__button-section">
+                <button class="button" type="submit">
+                  Записатись безкоштовно
+                </button>
+                <p class="form__confirm-text text-centered">
+                  Натискаючи на кнопку я погоджуюсь<br />
+                  <span class="text-underlined"
+                    >з політикою конфіденційності</span
+                  >
                 </p>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
