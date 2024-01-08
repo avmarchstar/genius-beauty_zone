@@ -42,6 +42,13 @@
               </li>
             </ul>
           </nav>
+          <div>
+            <button class="header__mobile-menu">
+              <svg class="icon-menu" width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
           <div class="header__social social_media">
             <ul class="social-media__list">
               <li>
@@ -78,8 +85,7 @@
             <h1
               class="hero-section__title title text-capitalized text-pri-blue-colored"
             >
-              beauty<br />
-              zone
+              beauty zone
             </h1>
             <button
               id="showDialogBtn"
@@ -95,7 +101,7 @@
           </div>
         </div>
       </section>
-      <section id="about" class="section about-section">
+      <!-- <section id="about" class="section about-section">
         <div class="container">
           <div class="about-section__container">
             <div class="about-section__content">
@@ -110,7 +116,7 @@
                 <br />
                 з догляду за шкірою обличчя та тіла.
               </p>
-              <p class="about-section__text" >
+              <p class="about-section__text">
                 B
                 <span class="text-capitalized text-semi-bold">beauty zone</span>
                 ми гарантуємо найвищі стандарти якості<br />
@@ -142,8 +148,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="why" class="section why-section">
+      </section> -->
+      <!-- <section id="why" class="section why-section">
         <div class="container">
           <div class="why-section__container">
             <h2 class="why-section__title title">
@@ -181,56 +187,64 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="procedures" class="section procedures-section">
+      </section> -->
+      <!-- <section id="procedures" class="section procedures-section">
         <div class="container">
           <h2 class="title procedures-section__title">
             Наші <span class="text-pri-blue-colored">процедури</span>
           </h2>
-          <!-- carousel -->
+          
           <div class="carousel">
-            <button class="carousel__button prev">
-              <svg width="17px" height="17px">
-                <use href="./images/symbol-defs.svg#icon-arrow"></use>
-              </svg>
-            </button>
-            <div class="procedures-section__cards">
-              <article class="procedures-card">
-                <img
-                  class="procedures-card__img"
-                  srcset="
-                    ./images/procedures-mask.jpg    1x,
-                    ./images/procedures-mask@2x.jpg 2x
-                  "
-                  src="./images/procedures-mask.jpg"
-                  alt="Дівчині роблять маску для обличчя"
-                />
-                <p class="text-centered">Маски для обличчя</p>
-              </article>
-              <article class="procedures-card">
-                <img
-                  class="procedures-card__img"
-                  srcset="
-                    ./images/procedures-injection.jpg 1x,
-                    ./images/procedures-injection.jpg 2x
-                  "
-                  src="./images/procedures-injection.jpg"
-                  alt="Дівчині роблять ін'єкцію для обличчя"
-                />
-                <p class="text-centered">Ін'єкції для обличчя</p>
-              </article>
-              <article class="procedures-card">
-                <img
-                  class="procedures-card__img"
-                  srcset="
-                    ./images/procedures-cleaning.jpg        1x,
-                    ./images/procedures-cleaning.jpg@2x.jpg 2x
-                  "
-                  src="./images/procedures-cleaning.jpg"
-                  alt="Дівчині роблять чистку обличчя"
-                />
-                <p class="text-centered">Очищення обличчя</p>
-              </article>
+            <div class="prev">
+              <button class="carousel__button prev">
+                <svg width="17px" height="17px">
+                  <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="procedures-section__slider">
+              <div class="procedures-section__cards">
+
+
+                <article class="procedures-card">
+                  <img
+                    class="procedures-card__img"
+                    srcset="
+                      ./images/procedures-mask.jpg    1x,
+                      ./images/procedures-mask@2x.jpg 2x
+                    "
+                    src="./images/procedures-mask.jpg"
+                    alt="Дівчині роблять маску для обличчя"
+                  />
+                  <p class="text-centered">Маски для обличчя</p>
+                </article>
+                <article class="procedures-card">
+                  <img
+                    class="procedures-card__img"
+                    srcset="
+                      ./images/procedures-injection.jpg 1x,
+                      ./images/procedures-injection.jpg 2x
+                    "
+                    src="./images/procedures-injection.jpg"
+                    alt="Дівчині роблять ін'єкцію для обличчя"
+                  />
+                  <p class="text-centered">Ін'єкції для обличчя</p>
+                </article>
+                <article class="procedures-card">
+                  <img
+                    class="procedures-card__img"
+                    srcset="
+                      ./images/procedures-cleaning.jpg        1x,
+                      ./images/procedures-cleaning.jpg@2x.jpg 2x
+                    "
+                    src="./images/procedures-cleaning.jpg"
+                    alt="Дівчині роблять чистку обличчя"
+                  />
+                  <p class="text-centered">Очищення обличчя</p>
+                </article>
+
+
+              </div>
             </div>
             <button class="carousel__button next">
               <svg width="17px" height="17px">
@@ -239,8 +253,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section id="contacts" class="section contacts-section">
+      </section> -->
+      <!-- <section id="contacts" class="section contacts-section">
         <div class="container">
           <div class="contacts-section__container">
             <h2 class="contacts-section__title title">
@@ -255,7 +269,7 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
               <div class="contacts-section__form">
-                <!-- FORM -->
+     
                 <form class="form">
                   <p class="form__text text-centered">
                     Запишіться
@@ -295,9 +309,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <div class="footer__logo logo">
@@ -382,7 +396,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal -->
     <div class="modal hidden">
       <div class="modal__backdrop">
