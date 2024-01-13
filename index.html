@@ -43,7 +43,7 @@
             </ul>
           </nav>
           <div>
-            <button class="header__mobile-menu">
+            <button class="header__burger-menu-button js-btn-burger-menu">
               <svg class="icon-menu" width="24px" height="24px">
                 <use href="./images/symbol-defs.svg#icon-menu"></use>
               </svg>
@@ -74,6 +74,77 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div class="burger-menu hidden">
+          <button
+            class="burger-menu__button-close button-close js-btn-close-burger-menu"
+          >
+            <svg width="16px" height="16px">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="burger-menu__logo">
+            <a href="/">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul class="burger-menu__list">
+              <li class="burger-menu__item">
+                <a href="" class="link burger-menu__link" title="Про нас"
+                  >Про нас</a
+                >
+              </li>
+              <li class="burger-menu__item">
+                <a href="" class="link burger-menu__link" title="Чому ми"
+                  >Чому ми</a
+                >
+              </li>
+              <li class="burger-menu__item">
+                <a href="" class="link burger-menu__link" title="Наші процедури"
+                  >Наші процедури</a
+                >
+              </li>
+              <li class="burger-menu__item">
+                <a href="" class="link burger-menu__link" title="Контакти"
+                  >Контакти</a
+                >
+              </li>
+              <li class="burger-menu__item burger-menu__menu-policy">
+                <a class="link burger-menu__link" href="#" target="_blank"
+                  >Політика конфіденційності</a
+                >
+              </li>
+              <li>
+                <div class="social_media">
+                  <ul class="social-media__list burger-menu__social-list">
+                    <li>
+                      <a class="social-media__item" href="tel:+380960000007">
+                        <svg class="icon burger-menu__icon">
+                          <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-media__item">
+                      <a class="social-media__item" href="#" target="_blank">
+                        <svg class="icon burger-menu__icon">
+                          <use href="./images/symbol-defs.svg#icon-fb"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-media__item">
+                      <a class="social-media__item" href="#" target="_blank">
+                        <svg class="icon burger-menu__icon">
+                          <use href="./images/symbol-defs.svg#icon-insta"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -229,8 +300,8 @@
                   <img
                     class="procedures-card__img"
                     srcset="
-                      ./images/procedures-cleaning.jpg        1x,
-                      ./images/procedures-cleaning.jpg@2x.jpg 2x
+                      ./images/procedures-cleaning.jpg    1x,
+                      ./images/procedures-cleaning@2x.jpg 2x
                     "
                     src="./images/procedures-cleaning.jpg"
                     alt="Дівчині роблять чистку обличчя"
@@ -262,7 +333,6 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
               <div class="contacts-section__form">
-     
                 <form class="form">
                   <p class="form__text text-centered">
                     Запишіться
@@ -331,10 +401,9 @@
                 >
               </li>
               <li class="footer__item footer__menu-policy">
-                <a class="link footer__link"
-                  href="#"
-                  target="_blank"
-                >Політика конфіденційності</a>
+                <a class="link footer__link" href="#" target="_blank"
+                  >Політика конфіденційності</a
+                >
               </li>
             </ul>
           </nav>
@@ -400,7 +469,7 @@
     <div class="modal hidden">
       <div class="modal__backdrop">
         <div class="modal__window">
-          <button class="button-close js-btn-close">
+          <button class="modal__button-close button-close js-btn-close">
             <svg width="16px" height="16px">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>

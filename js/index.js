@@ -1,18 +1,32 @@
 // shows modal
 {
-    const btnShowModal = document.querySelector('.js-btn-showmodal');
-    const btnClose = document.querySelector('.js-btn-close');
+    const modalBtnShow = document.querySelector('.js-btn-showmodal');
+    const modalBtnClose = document.querySelector('.js-btn-close');
     const backdropModal = document.querySelector('.modal');
 
-    btnShowModal.addEventListener('click', showModal);
-    btnClose.addEventListener('click', showModal);
+    modalBtnShow.addEventListener('click', showModal);
+    modalBtnClose.addEventListener('click', showModal);
 
     function showModal() {
         backdropModal.classList.toggle('hidden');
     }
 }
 
-// slider
+// burger menu
+{ 
+    const burgerMenuBtnShow = document.querySelector('.js-btn-burger-menu');
+    const burgerMenuBtnClose = document.querySelector('.js-btn-close-burger-menu');
+    const burgerMenuModal = document.querySelector('.burger-menu');
+
+    burgerMenuBtnShow.addEventListener('click', showBurgerMenu);
+    burgerMenuBtnClose.addEventListener('click', showBurgerMenu);
+
+    function showBurgerMenu() {
+        burgerMenuModal.classList.toggle('hidden');
+    }
+}
+
+// simple slider without swipe effect
 {
     const $sliderBtnPrev = document.querySelector('.prev');
     const $sliderBtnNext = document.querySelector('.next');
