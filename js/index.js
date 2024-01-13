@@ -15,14 +15,15 @@
 // burger menu
 { 
     const burgerMenuBtnShow = document.querySelector('.js-btn-burger-menu');
-    const burgerMenuBtnClose = document.querySelector('.js-btn-close-burger-menu');
+    const burgerMenuBtnClose = document.querySelector('.burger-menu');
     const burgerMenuModal = document.querySelector('.burger-menu');
-
+   
     burgerMenuBtnShow.addEventListener('click', showBurgerMenu);
     burgerMenuBtnClose.addEventListener('click', showBurgerMenu);
-
+    burgerMenuModal.addEventListener('click', e=>e);
+    
     function showBurgerMenu() {
-        burgerMenuModal.classList.toggle('hidden');
+            burgerMenuModal.classList.toggle('hidden');
     }
 }
 
